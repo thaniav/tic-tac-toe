@@ -61,6 +61,7 @@ function restartGame(){
     message.innerText='';
     cells.forEach(cell =>{
         cell.innerText='';
+        cell.style.backgroundColor='white';
     })
 
 }
