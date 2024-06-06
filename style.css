@@ -5,8 +5,11 @@ body {
     flex-direction: column;
     height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: black;
     text-align: center;
+}
+h1{
+    color: white;
 }
 
 .cell-grid{
@@ -29,9 +32,11 @@ body {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1em;
+    background-color: lime;
 }
 
 #message {
     margin-top: 10px;
     font-size: 1.2em;
+    color: white;
 }

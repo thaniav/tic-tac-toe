@@ -20,13 +20,20 @@ const winningConditions=[
 
 function handleCellClick(e){
 const cell = e.target;
-cell.style.backgroundColor='yellow';
 const index=parseInt(cell.getAttribute('data-number'));
+
 if(board[index]!='' || !gameActive)
     return;
 
 cell.innerText=currentPlayer;
 board[index]=currentPlayer;
+if(currentPlayer==='X'){
+    cell.style.backgroundColor='yellow';
+    }
+    else if(currentPlayer==='O'){
+    cell.style.backgroundColor='lime';
+    }
+
 checkResult();
 currentPlayer= currentPlayer==='X'? 'O':'X';
 
